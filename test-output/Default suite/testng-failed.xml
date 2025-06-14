@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="inputfields">
+      <class name="TestScripts.Button">
         <methods>
-          <include name="input"/>
+          <include name="gotohomebutton"/>
+          <include name="buttonstatus"/>
+          <include name="login"/>
+          <include name="getcolour"/>
+          <include name="getPosition"/>
+          <include name="getdimension"/>
+          <include name="flush"/>
+          <include name="holdButton"/>
         </methods>
-      </class> <!-- inputfields -->
+      </class> <!-- TestScripts.Button -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
