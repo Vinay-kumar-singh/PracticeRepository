@@ -1,5 +1,4 @@
 package POMClasses;
-
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +21,7 @@ private WebElement disabledButton;
 @FindBy(xpath= "//button[@id='isDisabled']/div/h2")
 private WebElement holdButton;
 WebDriver driver;
-Actions act=new Actions(driver);
+
 
 public ButtonClass(WebDriver driver)
 {
@@ -51,6 +50,7 @@ public String getColorButton() {
 			return disabledButton.isEnabled();
 		}
 		public void holdButton() {
+			Actions act=new Actions(driver);
 			act.clickAndHold(holdButton).pause(java.time.Duration.ofSeconds(3)).release().perform();
 		}
-}
+}" " 
